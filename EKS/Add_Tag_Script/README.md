@@ -1,4 +1,4 @@
-### Change to Subnet ID on cluster.yaml
+### Change to Subnet ID on cluster.yamls
 ```sh
 #!/bin/bash
 public_a=$(aws ec2 describe-subnets --filters "Name=tag:Name,Values=<env>-public-a" --query "Subnets[].SubnetId[]" --output text)
